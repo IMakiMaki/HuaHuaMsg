@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HuaHua Space</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title"></h1>
+    <p id="dayCount"></p>
+    <p id="declaration"></p>
+
+    <section id="setup">
+      <h2>Setup Couple</h2>
+      <label>Couple Name:<input type="text" id="coupleName"></label>
+      <label>Your Name:<input type="text" id="name1"></label>
+      <label>Partner Name:<input type="text" id="name2"></label>
+      <label>Start Date:<input type="date" id="startDate"></label>
+      <label>Declaration:<textarea id="declarationInput"></textarea></label>
+      <button id="save">Save</button>
+      <button id="reset">Reset</button>
+    </section>
+
+    <section id="messages">
+      <h2>Messages</h2>
+      <form id="msgForm">
+        <label>From:<select id="msgFrom"></select></label>
+        <textarea id="msgText"></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <ul id="msgList"></ul>
+    </section>
+
+    <section id="timeline">
+      <h2>Timeline</h2>
+      <form id="timelineForm">
+        <input type="date" id="eventDate">
+        <input type="text" id="eventTitle" placeholder="Title">
+        <textarea id="eventDesc"></textarea>
+        <button type="submit">Add Event</button>
+      </form>
+      <ul id="timelineList"></ul>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
