@@ -12,32 +12,44 @@
     <p id="dayCount"></p>
     <p id="declaration"></p>
 
-    <section id="setup">
-      <h2>Set Up Our Space</h2>
-      <label>Couple Name
-        <input type="text" id="coupleName" placeholder="e.g. Tom & Lily">
-      </label>
-      <label>Your Name
-        <input type="text" id="name1" placeholder="Your name">
-      </label>
-      <label>Partner Name
-        <input type="text" id="name2" placeholder="Partner's name">
-      </label>
-      <label>Start Date
-        <input type="date" id="startDate">
-      </label>
-      <label>Declaration
-        <textarea id="declarationInput" placeholder="Your love declaration"></textarea>
-      </label>
-      <div class="button-group">
-        <button id="save">Save</button>
-        <button id="reset">Reset</button>
-      </div>
+    <nav>
+      <button class="nav-btn active" data-section="home">Home</button>
+      <button class="nav-btn" data-section="messages">Messages</button>
+      <button class="nav-btn" data-section="timeline">Timeline</button>
+      <button class="nav-btn" data-section="wishlist">Wishlist</button>
+      <button class="nav-btn" data-section="anniversaries">Anniversaries</button>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+      <h2>Couple Info</h2>
+      <form id="couple-form">
+        <label>Couple Name
+          <input type="text" id="coupleName" placeholder="e.g. Tom & Lily">
+        </label>
+        <label>Your Name
+          <input type="text" id="name1" placeholder="Your name">
+        </label>
+        <label>Partner Name
+          <input type="text" id="name2" placeholder="Partner's name">
+        </label>
+        <label>Start Date
+          <input type="date" id="startDate">
+        </label>
+        <label>Declaration
+          <textarea id="declarationInput" placeholder="Your love declaration"></textarea>
+        </label>
+        <div class="button-group">
+          <button type="submit">Save</button>
+          <button type="button" id="reset">Reset</button>
+        </div>
+      </form>
     </section>
 
-    <section id="messages">
+    <!-- Messages Section -->
+    <section id="messages" class="section">
       <h2>Messages</h2>
-      <form id="msgForm">
+      <form id="message-form">
         <label>From
           <select id="msgFrom"></select>
         </label>
@@ -47,9 +59,10 @@
       <ul id="msgList"></ul>
     </section>
 
-    <section id="timeline">
+    <!-- Timeline Section -->
+    <section id="timeline" class="section">
       <h2>Timeline</h2>
-      <form id="timelineForm">
+      <form id="timeline-form">
         <input type="date" id="eventDate">
         <input type="text" id="eventTitle" placeholder="Event title">
         <textarea id="eventDesc" placeholder="Describe this memory"></textarea>
@@ -57,6 +70,30 @@
       </form>
       <ul id="timelineList"></ul>
     </section>
+
+    <!-- Wishlist Section -->
+    <section id="wishlist" class="section">
+      <h2>Wishlist</h2>
+      <form id="wishlist-form">
+        <input type="text" id="wishText" placeholder="Something you want to do together">
+        <button type="submit">Add Wish</button>
+      </form>
+      <ul id="wishlistList"></ul>
+    </section>
+
+    <!-- Anniversaries Section -->
+    <section id="anniversaries" class="section">
+      <h2>Anniversaries</h2>
+      <p id="nextAnniversary"></p>
+      <form id="anniversary-form">
+        <input type="text" id="annivTitle" placeholder="Anniversary title (e.g. 100 days)">
+        <input type="date" id="annivDate">
+        <label><input type="checkbox" id="annivRepeat"> Repeat annually</label>
+        <button type="submit">Add Anniversary</button>
+      </form>
+      <ul id="anniversaryList"></ul>
+    </section>
+
   </div>
   <script src="script.js"></script>
 </body>
