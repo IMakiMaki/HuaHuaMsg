@@ -8,26 +8,40 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="title"></h1>
+    <h1>HuaHua Space</h1>
     <p id="dayCount"></p>
     <p id="declaration"></p>
 
     <section id="setup">
-      <h2>Setup Couple</h2>
-      <label>Couple Name:<input type="text" id="coupleName"></label>
-      <label>Your Name:<input type="text" id="name1"></label>
-      <label>Partner Name:<input type="text" id="name2"></label>
-      <label>Start Date:<input type="date" id="startDate"></label>
-      <label>Declaration:<textarea id="declarationInput"></textarea></label>
-      <button id="save">Save</button>
-      <button id="reset">Reset</button>
+      <h2>Set Up Our Space</h2>
+      <label>Couple Name
+        <input type="text" id="coupleName" placeholder="e.g. Tom & Lily">
+      </label>
+      <label>Your Name
+        <input type="text" id="name1" placeholder="Your name">
+      </label>
+      <label>Partner Name
+        <input type="text" id="name2" placeholder="Partner's name">
+      </label>
+      <label>Start Date
+        <input type="date" id="startDate">
+      </label>
+      <label>Declaration
+        <textarea id="declarationInput" placeholder="Your love declaration"></textarea>
+      </label>
+      <div class="button-group">
+        <button id="save">Save</button>
+        <button id="reset">Reset</button>
+      </div>
     </section>
 
     <section id="messages">
       <h2>Messages</h2>
       <form id="msgForm">
-        <label>From:<select id="msgFrom"></select></label>
-        <textarea id="msgText"></textarea>
+        <label>From
+          <select id="msgFrom"></select>
+        </label>
+        <textarea id="msgText" placeholder="Write a sweet message..."></textarea>
         <button type="submit">Send</button>
       </form>
       <ul id="msgList"></ul>
@@ -37,8 +51,8 @@
       <h2>Timeline</h2>
       <form id="timelineForm">
         <input type="date" id="eventDate">
-        <input type="text" id="eventTitle" placeholder="Title">
-        <textarea id="eventDesc"></textarea>
+        <input type="text" id="eventTitle" placeholder="Event title">
+        <textarea id="eventDesc" placeholder="Describe this memory"></textarea>
         <button type="submit">Add Event</button>
       </form>
       <ul id="timelineList"></ul>
