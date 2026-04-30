@@ -85,3 +85,41 @@ li {
   padding: 10px;
   margin-bottom: 8px;
 }
+
+/* Navigation styles */
+nav {
+  nav {
+display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  background: rgba(255, 255, 255, 0.5);
+  color: #333;
+  border: none;
+  
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.nav-btn.active {
+  background: #d668a2;
+  color: #fff;
+}
+
+/* Section visibility */
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
