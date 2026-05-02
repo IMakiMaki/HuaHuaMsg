@@ -3,75 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HuaHua Space</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>花花小站</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="app-shell">
-    <aside class="sidebar" aria-label="HuaHua Space navigation">
+    <aside class="sidebar" aria-label="花花小站导航">
       <div class="brand">
         <div class="brand-mark">花</div>
         <div>
-          <p class="eyebrow">Private couple space</p>
-          <h1>HuaHua</h1>
+          <p class="eyebrow">两个人的记录本</p>
+          <h1>花花小站</h1>
         </div>
       </div>
 
       <nav class="nav-tabs">
         <button class="nav-btn active" data-section="home">
-          <span>🏠</span>
-          Overview
+          <span>⌂</span>
+          首页
         </button>
         <button class="nav-btn" data-section="messages">
-          <span>💌</span>
-          Messages
+          <span>✉</span>
+          留言
         </button>
         <button class="nav-btn" data-section="timeline">
-          <span>📍</span>
-          Timeline
+          <span>•</span>
+          时间线
         </button>
         <button class="nav-btn" data-section="wishlist">
-          <span>✨</span>
-          Wishlist
+          <span>☆</span>
+          愿望
         </button>
         <button class="nav-btn" data-section="anniversaries">
-          <span>🎁</span>
-          Anniversaries
+          <span>◌</span>
+          纪念日
         </button>
       </nav>
 
       <div class="sidebar-card">
-        <p class="eyebrow">Today</p>
-        <strong id="sideDayCount">Set your start date</strong>
-        <span id="sideNextAnniversary">No anniversary yet</span>
+        <p class="eyebrow">今天</p>
+        <strong id="sideDayCount">还没有设置开始日期</strong>
+        <span id="sideNextAnniversary">还没有添加纪念日</span>
       </div>
     </aside>
 
     <main class="main-content">
       <section class="hero-card">
         <div class="hero-copy">
-          <p class="eyebrow">Shared memory dashboard</p>
-          <h2 id="heroTitle">Build your little universe together</h2>
-          <p id="declaration" class="hero-declaration">Add your names, first day and declaration to light up this space.</p>
+          <p class="eyebrow">一起慢慢记录</p>
+          <h2 id="heroTitle">把日子过成有迹可循的样子</h2>
+          <p id="declaration" class="hero-declaration">写下名字、开始的那天，和一句只有你们懂的话。</p>
         </div>
         <div class="hero-stats">
           <div class="stat-card primary">
-            <span>Days Together</span>
+            <span>在一起</span>
             <strong id="dayCount">—</strong>
           </div>
           <div class="stat-card">
-            <span>Messages</span>
+            <span>留言</span>
             <strong id="messageCount">0</strong>
           </div>
           <div class="stat-card">
-            <span>Memories</span>
+            <span>回忆</span>
             <strong id="timelineCount">0</strong>
           </div>
           <div class="stat-card">
-            <span>Wishes</span>
+            <span>未完成愿望</span>
             <strong id="wishCount">0</strong>
           </div>
         </div>
@@ -82,45 +79,45 @@
           <article class="panel profile-panel">
             <div class="panel-header">
               <div>
-                <p class="eyebrow">Profile</p>
-                <h3>Couple Identity</h3>
+                <p class="eyebrow">基本信息</p>
+                <h3>我们的资料</h3>
               </div>
-              <button type="button" class="ghost-btn" id="reset">Reset</button>
+              <button type="button" class="ghost-btn" id="reset">清空</button>
             </div>
 
             <form id="couple-form" class="form-grid">
               <label>
-                Couple Name
-                <input type="text" id="coupleName" placeholder="比如：花花宇宙">
+                小站名称
+                <input type="text" id="coupleName" placeholder="比如：花花的日常">
               </label>
               <label>
-                Your Name
+                你的名字
                 <input type="text" id="name1" placeholder="你的名字">
               </label>
               <label>
-                Partner Name
+                对方的名字
                 <input type="text" id="name2" placeholder="TA 的名字">
               </label>
               <label>
-                Start Date
+                开始日期
                 <input type="date" id="startDate">
               </label>
               <label class="span-2">
-                Declaration
-                <textarea id="declarationInput" rows="5" placeholder="写一句只属于你们的宣言"></textarea>
+                一句话
+                <textarea id="declarationInput" rows="5" placeholder="不用很正式，像平时说话一样就好"></textarea>
               </label>
-              <button type="submit" class="primary-btn span-2">Save Profile</button>
+              <button type="submit" class="primary-btn span-2">保存</button>
             </form>
           </article>
 
           <article class="panel activity-panel">
             <div class="panel-header">
               <div>
-                <p class="eyebrow">Live Feed</p>
-                <h3>Recent Moments</h3>
+                <p class="eyebrow">最近</p>
+                <h3>刚刚发生的事</h3>
               </div>
             </div>
-            <div id="recentFeed" class="feed-list empty-state">Add a message, memory or wish to start the feed.</div>
+            <div id="recentFeed" class="feed-list empty-state">先写一条留言、回忆或愿望吧。</div>
           </article>
         </div>
       </section>
@@ -130,28 +127,28 @@
           <article class="panel composer-panel">
             <div class="panel-header">
               <div>
-                <p class="eyebrow">Message Board</p>
-                <h3>Leave a sweet note</h3>
+                <p class="eyebrow">留言板</p>
+                <h3>写点想说的话</h3>
               </div>
             </div>
             <form id="message-form" class="stack-form">
               <label>
-                From
+                来自
                 <select id="msgFrom"></select>
               </label>
               <label>
-                Message
+                内容
                 <textarea id="msgText" rows="7" placeholder="今天想对 TA 说什么？"></textarea>
               </label>
-              <button type="submit" class="primary-btn">Send Message</button>
+              <button type="submit" class="primary-btn">添加留言</button>
             </form>
           </article>
 
           <article class="panel list-panel">
             <div class="panel-header">
               <div>
-                <p class="eyebrow">Inbox</p>
-                <h3>All Messages</h3>
+                <p class="eyebrow">所有留言</p>
+                <h3>慢慢看</h3>
               </div>
             </div>
             <ul id="msgList" class="card-list"></ul>
@@ -164,32 +161,32 @@
           <article class="panel composer-panel">
             <div class="panel-header">
               <div>
-                <p class="eyebrow">Memory Capture</p>
-                <h3>Add a timeline event</h3>
+                <p class="eyebrow">回忆</p>
+                <h3>记下一天</h3>
               </div>
             </div>
             <form id="timeline-form" class="stack-form">
               <label>
-                Date
+                日期
                 <input type="date" id="eventDate">
               </label>
               <label>
-                Title
-                <input type="text" id="eventTitle" placeholder="比如：第一次旅行">
+                标题
+                <input type="text" id="eventTitle" placeholder="比如：第一次一起旅行">
               </label>
               <label>
-                Description
-                <textarea id="eventDesc" rows="6" placeholder="记录这一天发生了什么"></textarea>
+                发生了什么
+                <textarea id="eventDesc" rows="6" placeholder="不用写太多，能想起来就好"></textarea>
               </label>
-              <button type="submit" class="primary-btn">Add Memory</button>
+              <button type="submit" class="primary-btn">添加回忆</button>
             </form>
           </article>
 
           <article class="panel list-panel">
             <div class="panel-header">
               <div>
-                <p class="eyebrow">Journey</p>
-                <h3>Timeline</h3>
+                <p class="eyebrow">时间线</p>
+                <h3>一路走来</h3>
               </div>
             </div>
             <ul id="timelineList" class="timeline-list"></ul>
@@ -202,24 +199,24 @@
           <article class="panel composer-panel">
             <div class="panel-header">
               <div>
-                <p class="eyebrow">Dream Plan</p>
-                <h3>Add a shared wish</h3>
+                <p class="eyebrow">愿望清单</p>
+                <h3>以后一起做</h3>
               </div>
             </div>
             <form id="wishlist-form" class="stack-form">
               <label>
-                Wish
+                想做的事
                 <input type="text" id="wishText" placeholder="一起去看海、露营、做饭……">
               </label>
-              <button type="submit" class="primary-btn">Add Wish</button>
+              <button type="submit" class="primary-btn">添加愿望</button>
             </form>
           </article>
 
           <article class="panel list-panel">
             <div class="panel-header">
               <div>
-                <p class="eyebrow">Bucket List</p>
-                <h3>Wishlist</h3>
+                <p class="eyebrow">清单</p>
+                <h3>还想一起完成</h3>
               </div>
             </div>
             <ul id="wishlistList" class="card-list"></ul>
@@ -232,33 +229,33 @@
           <article class="panel composer-panel">
             <div class="panel-header">
               <div>
-                <p class="eyebrow">Important Days</p>
-                <h3>Add an anniversary</h3>
+                <p class="eyebrow">重要日子</p>
+                <h3>别忘了</h3>
               </div>
             </div>
-            <div class="next-card" id="nextAnniversary">No upcoming anniversary yet</div>
+            <div class="next-card" id="nextAnniversary">还没有即将到来的纪念日</div>
             <form id="anniversary-form" class="stack-form">
               <label>
-                Title
+                名称
                 <input type="text" id="annivTitle" placeholder="比如：100 天、生日、纪念日">
               </label>
               <label>
-                Date
+                日期
                 <input type="date" id="annivDate">
               </label>
               <label class="inline-check">
                 <input type="checkbox" id="annivRepeat">
-                Repeat annually
+                每年重复
               </label>
-              <button type="submit" class="primary-btn">Add Anniversary</button>
+              <button type="submit" class="primary-btn">添加纪念日</button>
             </form>
           </article>
 
           <article class="panel list-panel">
             <div class="panel-header">
               <div>
-                <p class="eyebrow">Calendar</p>
-                <h3>Saved Days</h3>
+                <p class="eyebrow">已保存</p>
+                <h3>重要日子</h3>
               </div>
             </div>
             <ul id="anniversaryList" class="card-list"></ul>
